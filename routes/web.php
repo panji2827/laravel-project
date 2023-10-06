@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegiterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::get ('/show',[NewsController::class,'show']);
 Route::get ('/create',[NewsController::class,'create']);
+
+Route::get ('/register',[RegiterController::class,'index']);
